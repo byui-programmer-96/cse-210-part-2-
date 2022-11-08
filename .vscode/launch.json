@@ -178,7 +178,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/articulate-complete/Unit05",
             "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
+            "internalConsoleOptions": "openOnSessionStart",
             "stopAtEntry": false
         },
         {
