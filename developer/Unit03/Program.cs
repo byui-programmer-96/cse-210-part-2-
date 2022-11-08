@@ -2,11 +2,14 @@
 
 namespace Unit03
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+     using Director = game.Director.Director;
+    
+    public static class Module {
+        
+        public static object director = Director();
+        
+        static Module() {
+            director.start_game();
         }
     }
 }
