@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Unit03
-{
-     using Director = game.Director.Director;
+namespace Unit03{
+    
+    using Director = game.director.Director;
     
     public static class Module {
         
