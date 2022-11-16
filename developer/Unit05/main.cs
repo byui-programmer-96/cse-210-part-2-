@@ -1,4 +1,4 @@
-namespace Namespace {
+namespace Unit05.Game.Directing {
     
     using constants;
     
