@@ -1,9 +1,3 @@
-
-Convert Python to C#
-Info
-
-Translation succeeded.
-
 namespace Namespace {
     
     using Color = game.shared.color.Color;
