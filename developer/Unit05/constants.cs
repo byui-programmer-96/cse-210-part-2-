@@ -1,4 +1,4 @@
-namespace Namespace {
+namespace Unit05.constants {
     
     using Color = game.shared.color.Color;
     
