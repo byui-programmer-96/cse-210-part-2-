@@ -18,6 +18,6 @@ Cycle is played according to the following rules.
         - The cycles turn white.
         - Players keep moving and turning but don't run into each other.
  # Interface
- ![image](https://user-images.githubusercontent.com/30276402/201990907-99bbae3f-f2fc-4a88-ab02-060fd1df2d56.png)
+ ![image](https://i.postimg.cc/CLFnBNy1/Screenshot-2022-11-18-173524.jpg)
 # Authors
 Cailynn Bambas (bam21002@byui.edu)
