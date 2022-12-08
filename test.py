@@ -1,55 +1,10 @@
-
-Skip to content
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@byui-programmer-96
-raysan5 /
-raylib-games
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-
-    Insights
-
-raylib-games/classics/src/asteroids.c
-@raysan5
-raysan5 Reviewed classic games
-Latest commit 7b44916 Jul 28, 2021
-History
-1 contributor
-565 lines (486 sloc) 22.7 KB
-/*******************************************************************************************
-*
-*   raylib - classic game: asteroids
-*
-*   Sample game developed by Ian Eito, Albert Martos and Ramon Santamaria
-*
-*   This game has been created using raylib v1.3 (www.raylib.com)
-*   raylib is licensed under an unmodified zlib/libpng license (View raylib.h for details)
-*
-*   Copyright (c) 2015 Ramon Santamaria (@raysan5)
-*
-********************************************************************************************/
-
-#include "raylib.h"
+int raylib.h
 
 #include <math.h>
 
 #if defined(PLATFORM_WEB)
     #include <emscripten/emscripten.h>
 #endif
-
-//----------------------------------------------------------------------------------
-// Some Defines
-//----------------------------------------------------------------------------------
 #define PLAYER_BASE_SIZE    20.0f
 #define PLAYER_SPEED        6.0f
 #define PLAYER_MAX_SHOOTS   10
@@ -57,11 +12,7 @@ History
 #define METEORS_SPEED       2
 #define MAX_BIG_METEORS     4
 #define MAX_MEDIUM_METEORS  8
-#define MAX_SMALL_METEORS   16
-
-//----------------------------------------------------------------------------------
-// Types and Structures Definition
-//----------------------------------------------------------------------------------
+#define MAX_SMALL_METEORS   16;
 typedef struct Player {
     Vector2 position;
     Vector2 speed;
@@ -112,22 +63,15 @@ static int midMeteorsCount = 0;
 static int smallMeteorsCount = 0;
 static int destroyedMeteorsCount = 0;
 
-//------------------------------------------------------------------------------------
-// Module Functions Declaration (local)
-//------------------------------------------------------------------------------------
 static void InitGame(void);         // Initialize game
 static void UpdateGame(void);       // Update game (one frame)
 static void DrawGame(void);         // Draw game (one frame)
 static void UnloadGame(void);       // Unload game
 static void UpdateDrawFrame(void);  // Update and Draw (one frame)
 
-//------------------------------------------------------------------------------------
-// Program main entry point
-//------------------------------------------------------------------------------------
 int main(void)
 {
-    // Initialization (Note windowTitle is unused on Android)
-    //---------------------------------------------------------
+   
     InitWindow(screenWidth, screenHeight, "classic game: asteroids");
 
     InitGame();
@@ -590,21 +534,4 @@ void UpdateDrawFrame(void)
 {
     UpdateGame();
     DrawGame();
-}
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-raylib-games/asteroids.c at master · raysan5/raylib-games
+}er
