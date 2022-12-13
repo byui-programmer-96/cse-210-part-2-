@@ -1,42 +1,22 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-public class PlayerController : MonoBehaviour
+namespace Platform_Game_Tutorial_MOO_ICT
 {
-    public float rotationSpeed;
-    public float movementSpeed;
-    public GameObject laser;
-    public float cooldown = 1f;
-    private float time = 0f;
-
-    // Update is called once per frame
-    void Update()
+    static class Program
     {
-
-        if (time > 0f)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            time -= Time.deltaTime;
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
-        else if (Input.GetKey(KeyCode.Space))
-        {
-            Instantiate(laser, transform.TransformPoint(Vector3.forward * 2), transform.rotation);
-            time = cooldown;
-        }
-
-        if (Input.GetKey(KeyCode.W))
-            GetComponent<Rigidbody>().AddForce(transform.forward * movementSpeed * Time.deltaTime);
-
-        if (Input.GetKey(KeyCode.S))
-            GetComponent<Rigidbody>().AddForce(transform.forward * -movementSpeed * Time.deltaTime);
-
-
-        if (Input.GetKey(KeyCode.A))
-            transform.Rotate(-Vector3.up * rotationSpeed * Time.deltaTime);
-
-        if (Input.GetKey(KeyCode.D))
-            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
-
     }
-
 }
