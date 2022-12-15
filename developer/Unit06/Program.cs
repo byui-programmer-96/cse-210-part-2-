@@ -1,17 +1,31 @@
-﻿﻿namespace Namespace {
-    
-    using random;
-    
+﻿﻿namespace Namespace
+{
+    using System;
     using System.Collections.Generic;
-    
+
     public static class Module {
-        
+        private static object WHITE;
+
+        public static object KEY_W { get; private set; }
+        public static object KEY_S { get; private set; }
+        public static object BLACK { get; private set; }
+
         static Module() {
             InitWindow(1000, 800, new byte[] { (byte)'C', (byte)'Y', (byte)'C', (byte)'L', (byte)'E' });
             SetTargetFPS(60);
             main();
         }
-        
+
+        private static void SetTargetFPS(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void InitWindow(int v1, int v2, byte[] bytes)
+        {
+            throw new NotImplementedException();
+        }
+
         public class Position {
             
             public Position(
@@ -119,6 +133,54 @@
                 EndDrawing();
             }
             CloseWindow();
+        }
+
+        private static void EndDrawing()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void DrawFPS(int v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void ClearBackground(object wHITE)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void BeginDrawing()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static bool WindowShouldClose()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static object Ball()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static object Position()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static bool IsKeyDown(object kEY_S)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class random
+    {
+        internal static object randint(int v1, int v2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
